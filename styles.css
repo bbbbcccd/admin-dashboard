@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 150px 1fr / 200px 1fr;
+}
+
+div {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+body > .header {
+    grid-area: 1 / 2 / 2 / 3; 
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+body > .sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+}
