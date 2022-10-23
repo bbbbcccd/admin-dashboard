@@ -8,13 +8,61 @@ body {
 
 div {
     background-color: lightblue;
-    border: 1px solid black;
 }
 
 body > .header {
     grid-area: 1 / 2 / 2 / 3; 
     display: grid;
     grid-template-rows: 2fr 3fr;
+    align-items: center;
+}
+
+.header > .nav-bar {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 8px 4rem;
+    gap: 4rem;
+}
+
+.nav-bar > form {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.nav-bar button {
+    background-color: lightblue;
+    border: none;
+    padding: 0;
+}
+
+.nav-bar > form > input {
+    background-color: lightgrey;
+    border-radius: 8px;
+    border: none;
+    padding: 4px;
+    font-size: 1rem;
+}
+
+.nav-bar > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;;
+    gap: 2rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.header img {
+    width: 30px;
 }
 
 body > .sidebar {
