@@ -18,11 +18,11 @@ body > .header {
 }
 
 .header > .nav-bar {
-    border: 1px solid black;
     display: flex;
     align-items: center;
-    padding: 8px 4rem;
+    padding: 2px 4rem;
     gap: 4rem;
+    margin-top: 8px;
 }
 
 .nav-bar > form {
@@ -52,6 +52,7 @@ body > .header {
     display: flex;
     align-items: center;;
     gap: 2rem;
+    margin: 0;
 }
 
 .nav-bar a {
@@ -61,8 +62,38 @@ body > .header {
     color: black;
 }
 
-.header img {
+.nav-bar img {
     width: 30px;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 3rem;
+    gap: 1rem;
+}
+
+.upload-container > div {
+    flex: 1;
+}
+
+div.username {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.upload-container ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.upload-container button {
+    width: 6rem;
+    background-color: lightcyan;
+    padding: 8px;
+    border-radius: 1rem;
+    border: none;
 }
 
 body > .sidebar {
