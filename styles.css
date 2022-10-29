@@ -139,4 +139,49 @@ body > .sidebar {
     margin-bottom: 0;
 }
 
+.main-container {
+    padding:1rem 2rem;
+    display: grid;
+    grid-template: 1fr 1fr / 7fr 3fr;
+}
 
+.project-container {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.trending > div {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.25rem 1rem;
+}
+
+
+.trending ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.trending li {
+    display: grid;
+    grid-template: repeat(2, auto) / 40px 1fr;
+    grid-template-areas: "icon username" 
+                         "icon description";
+    place-items: center start;                     
+}
+
+.trending img {
+    width: 30px;
+    grid-area: icon;
+}
+
+.trending .username {
+    grid-area: username;
+    font-size: 1rem;
+}
+
+
+.trending .description {
+    grid-area: description;
+}
