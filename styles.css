@@ -145,24 +145,50 @@ body > .sidebar {
     grid-template: 1fr 1fr / 7fr 3fr;
 }
 
+.main-container h3 {
+    margin-bottom: 0.25rem;
+}
+
 .project-container {
     grid-area: 1 / 1 / 3 / 2;
 }
 
+.announcement,
 .trending {
     display: flex;
     flex-direction: column;
 }
 
+.announcement > div,
 .trending > div {
     flex: 1;
     border: 1px solid black;
     border-radius: 4px;
+}
+
+.announcement > div {
+    padding: 0.5rem 1rem;
+}
+
+.trending > div {
     padding: 0.25rem 1rem;
 }
 
+.announcement h4,
+.announcement p {
+    margin: 0;
+}
 
-.trending ul {
+.announcement li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+
+.announcement li {
+    padding-bottom: 1rem;
+}
+
+.trending ul,
+.announcement ul {
     list-style-type: none;
     padding-left: 0;
     display: grid;
